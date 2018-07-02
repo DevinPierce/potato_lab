@@ -1,0 +1,7 @@
+<h3> <%=@potato.name %> </h3>
+
+<%= link_to "Back", potatoes_path %> 
+
+<h3> Eyes: <%= @potato.eyes %> </h3>
+<%= link_to "edit", edit_potato_path(@potato)%>  |
+<%= link_to "delete", @potato, method: "delete"  %>

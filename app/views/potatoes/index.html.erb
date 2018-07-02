@@ -1,0 +1,12 @@
+<h2>Potatoes!!!</h2>
+
+<%= link_to "Add a Potato", new_potato_path %>
+
+<ul>
+<% @potatoes.each do |potato| %>
+<li><h3><%= link_to potato.name, potato  %> </h3> <br />
+  <%= link_to "edit", edit_potato_path(potato)  %>  <br />
+  <%= link_to "delete", potato, method: "delete"  %>  </li>
+
+<% end %>
+</ul>
